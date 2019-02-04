@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a list of news articles -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- This custom toolbar replaces the default theme toolbar-->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <!-- This ListView displays the news articles-->
+    <!-- This is where all the JSON data goes into-->
+    <ListView
+        android:id="@+id/news_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:divider="@null"
+        android:drawSelectorOnTop="true"
+        android:orientation="vertical"
+        tools:context=".NewsActivity" />
+
+    <!--Empty view is only visible when the list has no items(due to non-availability of service)
+        or when there is no network connectivity. -->
+    <TextView
+        android:id="@+id/tv_empty_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/padding_big"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <!-- Loading indicator is only shown before the first load or when refresh is clicked-->
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>
+

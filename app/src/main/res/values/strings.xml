@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">My News</string>
+
+    <!--Main Activity Title-->
+    <string name="app_title">News</string>
+
+    <!-- Settings Activity Title -->
+    <string name="settings_title">News Settings</string>
+
+    <!-- Refresh Menu Item-->
+    <string name="menu_refresh">Refresh News</string>
+
+    <!-- Settings Menu Item-->
+    <string name="settings_menu_item">Settings</string>
+
+    <string name="no_author">Author Unknown</string>
+    <string name="pub_date_na">PubDate Unavailable</string>
+
+    <!-- Error message when there is no internet connectivity-->
+    <string name="no_internet_connection">No internet connection. Please switch on WiFi or Mobile data or disable Airplane Mode and click on Refresh News.</string>
+
+    <!-- Text to display in the list when there are no news articles-->
+    <string name="no_news">No news articles found. Please click on refresh or try again later.</string>
+
+    <!--Networking error messages-->
+    <string name="error_http_request">Problem making the HTTP request.</string>
+    <string name="error_making_url">Error with creating URL.</string>
+    <string name="error_code">Error response code: %1$d</string>
+    <string name="error_json_results">Problem retrieving the news JSON results.</string>
+    <string name="error_json_parse">Problem parsing the news JSON results.</string>
+    <string name="error_json_thumbnail">Problem obtaining thumbnail from url.</string>
+    <string name="error_parse_date">Error parsing the publication date.</string>
+
+    <!--Keys for JSON parsing-->
+    <string name="json_object_response">response</string>
+    <string name="json_object_fields">fields</string>
+    <string name="json_array_results">results</string>
+    <string name="json_array_tags">tags</string>
+    <string name="json_prim_title">webTitle</string>
+    <string name="json_prim_section">sectionName</string>
+    <string name="json_prim_date">webPublicationDate</string>
+    <string name="json_prim_webUrl">webUrl</string>
+    <string name="json_prim_thumbnail">thumbnail</string>
+    <string name="json_prim_contributors">webTitle</string>
+
+    <!--Date formats-->
+    <string name="available_date_format">yyyy-MM-dd\'T\'HH:mm:ss\'Z\'</string>
+    <string name="new_date_format">yyyy-MM-dd | HH:mm</string>
+
+    <!--For Settings page-->
+    <!--Page Size-->
+    <string name="settings_page_size_label">Page Size</string>
+    <string name="settings_page_size_key" translatable="false">pageSize</string>
+    <string name="settings_page_size_default" translatable="false">10</string>
+
+    <!--Order By-->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">orderBy</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_newest_news_value</string>
+
+    <string name="settings_order_by_newest_news_label">Newest</string>
+    <string name="settings_order_by_newest_news_value" translatable="false">newest</string>
+
+    <string name="settings_order_by_oldest_news_label">Oldest</string>
+    <string name="settings_order_by_oldest_news_value" translatable="false">oldest</string>
+
+    <string name="settings_order_by_relevance_news_label">Relevance</string>
+    <string name="settings_order_by_relevance_news_value" translatable="false">relevance</string>
+
+    <!--Sections-->
+    <string name="settings_section_label">Section</string>
+    <string name="settings_section_key" translatable="false">section</string>
+    <string name="settings_section_default" translatable="false">@string/settings_section_all_news_value</string>
+
+    <string name="settings_section_all_news_label">All</string>
+    <string name="settings_section_all_news_value" translatable="false" />
+
+    <string name="settings_section_world_news_label">World news</string>
+    <string name="settings_section_world_news_value" translatable="false">world</string>
+
+    <string name="settings_section_us_news_label">US news</string>
+    <string name="settings_section_us_news_value" translatable="false">us-news</string>
+
+    <string name="settings_section_australia_news_label">Australia news</string>
+    <string name="settings_section_australia_news_value" translatable="false">australia-news</string>
+
+    <string name="settings_section_politics_label">Politics</string>
+    <string name="settings_section_politics_value" translatable="false">politics</string>
+
+    <string name="settings_section_opinion_label">Opinion</string>
+    <string name="settings_section_opinion_value" translatable="false">commentisfree</string>
+
+    <string name="settings_section_technology_label">Technology</string>
+    <string name="settings_section_technology_value" translatable="false">technology</string>
+
+    <string name="settings_section_business_label">Business</string>
+    <string name="settings_section_business_value" translatable="false">business</string>
+
+    <string name="settings_section_lifestyle_label">Life and style</string>
+    <string name="settings_section_lifestyle_value" translatable="false">lifeandstyle</string>
+
+    <string name="settings_section_environment_label">Environment</string>
+    <string name="settings_section_environment_value" translatable="false">environment</string>
+
+</resources>
